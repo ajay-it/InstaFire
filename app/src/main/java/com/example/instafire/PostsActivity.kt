@@ -39,6 +39,7 @@ open class PostsActivity : AppCompatActivity() {
         // Bind the adapter and layout manager to the RV
         rvPosts.adapter = adapter
         rvPosts.layoutManager = LinearLayoutManager(this)
+
         firestoreDb = FirebaseFirestore.getInstance()
 
         firestoreDb.collection("users")
